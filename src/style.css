@@ -1,0 +1,41 @@
+@tailwind base;
+
+body{
+    @apply w-full h-full block bg-[#f1f1f1] text-[sans-serif] p-[20px];
+}
+h1{
+    @apply text-4xl text-white mb-4 mt-24 text-center font-bold;
+}
+h2{
+    @apply text-xl mb-4;
+}
+img{
+    object-fit: cover;
+}
+label{
+    @apply block mb-4;
+}
+button{
+    background: linear-gradient(to right, rgb(64, 22, 83), rgb(32, 4, 51));
+    @apply block text-white w-full p-2 rounded-full;
+}
+button:hover{
+    background: linear-gradient(to right, rgb(72, 27, 93), rgb(42, 5, 67));
+}
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components{
+    .container-form{
+        @apply w-full flex justify-center flex-col;
+    }
+    .element-one{
+        /* background: linear-gradient(to top, rgb(64, 22, 83), rgb(32, 4, 51)); */
+        @apply py-5 px-10 bg-[url('../images/annie-spratt-_8Alc_9BIdE-unsplash.jpg')] bg-cover w-auto;
+    }
+    .element-two{
+        @apply px-6 py-4  bg-white w-auto flex-shrink-0;
+    }
+    
+}

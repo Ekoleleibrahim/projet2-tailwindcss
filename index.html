@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire tailwindcss</title>
+    <link rel="stylesheet" href="src/output.css">
+    <meta property="og:title" content="Formulaire avec Tailwindcss">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/form-live.png">
+    <meta property="og:url" content="https://ekoleleibrahim.github.io/projet2-tailwindcss/">
+    <meta property="og:locale" content="en_Us">
+</head>
+<body class="md:p-0 md:flex md:justify-center md:items-center md:h-screen">
+    <div class="container-form md:flex-row md:w-[600px]">
+        <div class="element-one md:relative md:flex-shrink-0 md:rounded-l-[15px] md:rounded-r-none">
+            <a href="" class="text-white"><span class="font-bold text-4xl">.</span><span>LOGO</span></a>
+            <h1 class="md:text-left md:font-normal">
+                <span class="block">Uniting haerts,</span>
+                <span class="block">Building hope</span>
+            </h1>
+        </div>
+        <div class="element-two md:shadow-sm md:shadow-violet-400 md:rounded-l-[20px] md:rounded-r-[15px]  md:relative md:z-10 md:translate-x-[-20px]">
+            <div class="text-right">
+                <select id="option" class="focus:outline-none">
+                    <option value="english">English(USA)</option>
+                    <option value="francais">FRANCAIS(FRANCE)</option>
+                </select>
+            </div>
+            <h2>Creat Account</h2> 
+            <form>
+                <label for="name">
+                    <input type="text" placeholder="Full Name" id="name" class="border border-x-0 border-t-0 w-full border-b-black border-b-2 placeholder:text-black focus:outline-none focus:border-b-violet-950 p-2">
+                </label>
+                <label for="email">
+                    <input type="email" placeholder="Email Address" id="email" class="border border-x-0 border-t-0 w-full border-b-black border-b-2 placeholder:text-black focus:outline-none focus:border-b-violet-950 p-2">
+                </label>
+                <label for="password">
+                    <input type="password" placeholder="Password" id="password" class="border border-x-0 border-t-0 w-full border-b-black border-b-2 placeholder:text-black focus:outline-none focus:border-b-violet-950 p-2">
+                </label>
+                <label for="choix" class="has-[:checked]:text-violet-950">
+                    <input type="checkbox" id="choix">
+                    I agree to the  <a href="" class="text-violet-600">terms of service</a> and <a href="" class="text-violet-600">privancy policy</a>.
+                </label>
+                <div class="mt-4">
+                    <button type="submit">Sign up</button>
+                </div>
+                <div class="md:flex md:items-center md:justify-center md:gap-2 mt-10">
+                    <div class=":md:border-b-1 md:border md:border-gray-400 md:w-[100px]"></div>
+                    <div class="text-center">Or Sign Up With</div>
+                    <div class=":md:border-b-1 md:border md:border-gray-400 md:w-[100px]"></div>
+                </div>
+                <div class="flex items-center justify-center gap-2 m-3 *:cursor-pointer">
+                    <img src="images/Google_1.ico" alt="google" class="">
+                    <img src="images/Facebook_1.ico" alt="Facebook">
+                    <img src="images/Instagram_1.ico" alt="Instagram">
+                    <img src="images/Twitter_1.ico" alt="Twitter">
+                    <img src="images/LinkedIn_1.ico" alt="LinkedIn">
+                </div>
+                <p class="mt-3 text-center">Already Have an account? <a href="" class="text-violet-800 underline">Sign in</a></p>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
