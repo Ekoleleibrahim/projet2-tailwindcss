@@ -31,11 +31,10 @@ button:hover{
         @apply w-full flex justify-center flex-col;
     }
     .element-one{
-        /* background: linear-gradient(to top, rgb(64, 22, 83), rgb(32, 4, 51)); */
-        @apply py-5 px-10 bg-[url('../images/annie-spratt-_8Alc_9BIdE-unsplash.jpg')] bg-cover w-auto;
+        @apply py-5 px-10 bg-[url('../images/annie-spratt-_8Alc_9BIdE-unsplash.jpg')] bg-cover;
     }
     .element-two{
-        @apply px-6 py-4  bg-white w-auto flex-shrink-0;
+        @apply px-6 py-4  bg-white flex-shrink-0;
     }
     
 }

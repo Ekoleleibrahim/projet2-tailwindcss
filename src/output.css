@@ -612,9 +612,7 @@ button:hover{
   justify-content: center;
 }
 
-.element-one{
-  /* background: linear-gradient(to top, rgb(64, 22, 83), rgb(32, 4, 51)); */
-  width: auto;
+.element-one {
   background-image: url('../images/annie-spratt-_8Alc_9BIdE-unsplash.jpg');
   background-size: cover;
   padding-top: 1.25rem;
@@ -624,7 +622,6 @@ button:hover{
 }
 
 .element-two {
-  width: auto;
   flex-shrink: 0;
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
@@ -778,29 +775,33 @@ button:hover{
     display: flex;
   }
 
+  .md\:grid {
+    display: grid;
+  }
+
   .md\:h-screen {
     height: 100vh;
+  }
+
+  .md\:w-3\/5 {
+    width: 60%;
   }
 
   .md\:w-\[100px\] {
     width: 100px;
   }
 
-  .md\:w-\[600px\] {
-    width: 600px;
-  }
-
   .md\:flex-shrink-0 {
     flex-shrink: 0;
   }
 
-  .md\:translate-x-\[-20px\] {
-    --tw-translate-x: -20px;
+  .md\:translate-x-\[-15px\] {
+    --tw-translate-x: -15px;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 
-  .md\:flex-row {
-    flex-direction: row;
+  .md\:grid-cols-\[1fr_1fr\] {
+    grid-template-columns: 1fr 1fr;
   }
 
   .md\:items-center {
