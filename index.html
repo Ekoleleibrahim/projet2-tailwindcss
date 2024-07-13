@@ -11,32 +11,32 @@
     <meta property="og:url" content="https://ekoleleibrahim.github.io/projet2-tailwindcss/">
     <meta property="og:locale" content="en_Us">
 </head>
-<body class="md:p-0 md:flex md:justify-center md:items-center md:h-screen">
-    <div class="container-form md:grid md:grid-cols-[1fr_1fr] md:w-3/5">
-        <div class="element-one md:relative md:flex-shrink-0 md:rounded-l-[15px] md:rounded-r-none">
-            <a href="" class="text-white"><span class="font-bold text-4xl">.</span><span>LOGO</span></a>
-            <h1 class="md:text-left md:font-normal">
-                <span class="block">Uniting haerts,</span>
-                <span class="block">Building hope</span>
+<body class="p-0">
+    <div class="container-form md:grid md:grid-cols-[50%_50%]">
+        <div class="element-one">
+            <a href="" class="text-white text-2xl link"><span class="font-bold text-4xl">.</span><span>LOGO</span></a>
+            <h1 class="md:text-center md:font-normal  text-6xl">
+                Uniting haerts,
+                Building hope
             </h1>
         </div>
-        <div class="element-two md:shadow-sm md:shadow-violet-400 md:rounded-l-[20px] md:rounded-r-[15px]  md:relative md:z-10 md:translate-x-[-15px]">
-            <div class="text-right">
-                <select id="option" class="focus:outline-none">
-                    <option value="english">English(USA)</option>
-                    <option value="francais">FRANCAIS(FRANCE)</option>
-                </select>
-            </div>
-            <h2>Creat Account</h2> 
-            <form>
+        <div class="element-two md:shadow-sm md:shadow-black">
+            <form class="w-full">
+                <div class="text-right">
+                    <select id="option" class="focus:outline-none">
+                        <option value="english">English(USA)</option>
+                        <option value="francais">FRANCAIS(FRANCE)</option>
+                    </select>
+                </div>
+                <h2>Creat Account</h2>
                 <label for="name">
-                    <input type="text" placeholder="Full Name" id="name" class="border border-x-0 border-t-0 w-full border-b-black border-b-2 placeholder:text-black focus:outline-none focus:border-b-violet-950 p-2">
+                    <input type="text" placeholder="Full Name" id="name" class="border border-x-0 border-t-0 w-full border-b-black border-b-1 placeholder:text-black focus:outline-none focus:border-b-violet-950 p-2">
                 </label>
                 <label for="email">
-                    <input type="email" placeholder="Email Address" id="email" class="border border-x-0 border-t-0 w-full border-b-black border-b-2 placeholder:text-black focus:outline-none focus:border-b-violet-950 p-2">
+                    <input type="email" placeholder="Email Address" id="email" class="border border-x-0 border-t-0 w-full border-b-black border-b-1 placeholder:text-black focus:outline-none focus:border-b-violet-950 p-2">
                 </label>
                 <label for="password">
-                    <input type="password" placeholder="Password" id="password" class="border border-x-0 border-t-0 w-full border-b-black border-b-2 placeholder:text-black focus:outline-none focus:border-b-violet-950 p-2">
+                    <input type="password" placeholder="Password" id="password" class="border border-x-0 border-t-0 w-full border-b-black border-b-1 placeholder:text-black focus:outline-none focus:border-b-violet-950 p-2">
                 </label>
                 <label for="choix" class="has-[:checked]:text-violet-950">
                     <input type="checkbox" id="choix">

@@ -565,14 +565,24 @@ body {
 }
 
 h1 {
-  margin-bottom: 1rem;
-  margin-top: 6rem;
-  text-align: center;
+  margin-top: 1.25rem;
+  margin-bottom: 2rem;
   font-size: 2.25rem;
   line-height: 2.5rem;
   font-weight: 700;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+@media (min-width: 768px) {
+  h1 {
+    margin-bottom: 1rem;
+    margin-top: 10rem;
+  }
+}
+
+h1{
+  text-shadow: 0 0 5px black, 0 0 5px black;
 }
 
 h2 {
@@ -592,13 +602,18 @@ label {
 }
 
 button{
-  background: linear-gradient(to right, rgb(64, 22, 83), rgb(32, 4, 51));
+  background: linear-gradient(to right, #401653, rgb(32, 4, 51));
   display: block;
   width: 100%;
   border-radius: 9999px;
   padding: 0.5rem;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+  --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  --tw-shadow-color: #401653;
+  --tw-shadow: var(--tw-shadow-colored);
 }
 
 button:hover{
@@ -607,6 +622,7 @@ button:hover{
 
 .container-form {
   display: flex;
+  height: 100vh;
   width: 100%;
   flex-direction: column;
   justify-content: center;
@@ -615,20 +631,33 @@ button:hover{
 .element-one {
   background-image: url('../images/annie-spratt-_8Alc_9BIdE-unsplash.jpg');
   background-size: cover;
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
+  padding: 130px;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  padding-bottom: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .element-one {
+    padding-top: 1.25rem;
+  }
 }
 
 .element-two {
+  display: flex;
   flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding: 1.25rem;
+}
+
+@media (min-width: 768px) {
+  .element-two {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
 }
 
 .m-3 {
@@ -645,10 +674,6 @@ button:hover{
 
 .mt-4 {
   margin-top: 1rem;
-}
-
-.block {
-  display: block;
 }
 
 .flex {
@@ -680,10 +705,6 @@ button:hover{
   border-right-width: 0px;
 }
 
-.border-b-2 {
-  border-bottom-width: 2px;
-}
-
 .border-t-0 {
   border-top-width: 0px;
 }
@@ -691,6 +712,10 @@ button:hover{
 .border-b-black {
   --tw-border-opacity: 1;
   border-bottom-color: rgb(0 0 0 / var(--tw-border-opacity));
+}
+
+.p-0 {
+  padding: 0px;
 }
 
 .p-2 {
@@ -705,9 +730,19 @@ button:hover{
   text-align: right;
 }
 
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
+}
+
+.text-6xl {
+  font-size: 3.75rem;
+  line-height: 1;
 }
 
 .font-bold {
@@ -731,6 +766,10 @@ button:hover{
 
 .underline {
   text-decoration-line: underline;
+}
+
+.link{
+  text-shadow: 0 0 5px black, 0 0 10px black;
 }
 
 .\*\:cursor-pointer > * {
@@ -763,14 +802,6 @@ button:hover{
 }
 
 @media (min-width: 768px) {
-  .md\:relative {
-    position: relative;
-  }
-
-  .md\:z-10 {
-    z-index: 10;
-  }
-
   .md\:flex {
     display: flex;
   }
@@ -779,29 +810,28 @@ button:hover{
     display: grid;
   }
 
-  .md\:h-screen {
-    height: 100vh;
-  }
-
-  .md\:w-3\/5 {
-    width: 60%;
-  }
-
   .md\:w-\[100px\] {
     width: 100px;
   }
 
-  .md\:flex-shrink-0 {
-    flex-shrink: 0;
-  }
-
-  .md\:translate-x-\[-15px\] {
-    --tw-translate-x: -15px;
-    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-  }
-
   .md\:grid-cols-\[1fr_1fr\] {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .md\:grid-cols-\[_1fr\] {
+    grid-template-columns: 1fr;
+  }
+
+  .md\:grid-cols-\[50\%_1fr\] {
+    grid-template-columns: 50% 1fr;
+  }
+
+  .md\:grid-cols-\[50\%_50\] {
+    grid-template-columns: 50% 50;
+  }
+
+  .md\:grid-cols-\[50\%_50\%\] {
+    grid-template-columns: 50% 50%;
   }
 
   .md\:items-center {
@@ -816,26 +846,6 @@ button:hover{
     gap: 0.5rem;
   }
 
-  .md\:rounded-l-\[15px\] {
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
-  }
-
-  .md\:rounded-l-\[20px\] {
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-  }
-
-  .md\:rounded-r-\[15px\] {
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-  }
-
-  .md\:rounded-r-none {
-    border-top-right-radius: 0px;
-    border-bottom-right-radius: 0px;
-  }
-
   .md\:border {
     border-width: 1px;
   }
@@ -845,12 +855,8 @@ button:hover{
     border-color: rgb(156 163 175 / var(--tw-border-opacity));
   }
 
-  .md\:p-0 {
-    padding: 0px;
-  }
-
-  .md\:text-left {
-    text-align: left;
+  .md\:text-center {
+    text-align: center;
   }
 
   .md\:font-normal {
@@ -863,8 +869,8 @@ button:hover{
     box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
   }
 
-  .md\:shadow-violet-400 {
-    --tw-shadow-color: #a78bfa;
+  .md\:shadow-black {
+    --tw-shadow-color: #000;
     --tw-shadow: var(--tw-shadow-colored);
   }
 }
