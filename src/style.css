@@ -4,8 +4,9 @@ body{
     @apply w-full h-full block bg-[#f1f1f1] text-[sans-serif] p-[20px];
 }
 h1{
-    @apply md:mb-4 md:mt-40 mt-5 mb-8 text-white font-bold text-4xl;
+    @apply md:mb-4 md:mt-40 mt-5 mb-8 text-white font-bold text-4xl bg-black bg-opacity-10 p-1;
     text-shadow: 0 0 5px black, 0 0 5px black;
+    
 }
 h2{
     @apply text-xl mb-4;
@@ -35,7 +36,7 @@ button:hover{
         @apply p-[130px] pb-6 px-5 bg-[url('../images/annie-spratt-_8Alc_9BIdE-unsplash.jpg')] bg-cover md:pt-5;
     }
     .element-two{
-        @apply md:px-[35px] p-5  bg-white flex-shrink-0 flex justify-center items-center;
+        @apply md:px-[60px] p-5 bg-white flex-shrink-0 flex justify-center items-center;
     }
     
 }
